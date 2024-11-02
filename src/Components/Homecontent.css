@@ -112,5 +112,23 @@
     }
 }
 
+@media only screen and (max-width: 414px) {
+    .maincontent {
+        font-size:65px; /* Adjust font size as needed */
+        margin: 24% 4% 0 4%; /* Center the main content */
+        text-align: left;
+    }
+
+    .subcontent {
+        margin: 20px auto 0; /* Center the subcontent below */
+        margin-left: 4%;
+        text-align: left;
+    }
+
+    .circle{
+        margin-top: -63%;
+    }
+  }
+
 
 

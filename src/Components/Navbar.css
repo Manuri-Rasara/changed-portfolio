@@ -173,4 +173,57 @@
     }
     
 }
+@media only screen and (max-width: 414px) {
+    .main {
+        display: block;
+        transition: .2s;
+    }
 
+    .navbar {
+        position: absolute;
+        top: 10%;
+        right: -100%;
+        width: 220px;
+        height: 29vh;
+        background: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-radius: 10px;
+        transition: all 1s ease;
+        
+    }
+
+    .navbar a{
+        display: block;
+        margin: 12px 0;
+        padding: 0px 25px;
+        transition: all 1s ease;
+        color: white;
+        font-weight: 300;
+        padding-top: 5px;
+    }
+
+    .navbar ul li a{
+        font-weight: 400;
+    }
+
+    .navbar.open{
+        right: 5%;
+    }
+
+    .nav-dot{
+        position: absolute;
+        top: 27px;
+        right: 48px;
+        width: 5px;
+        height: 5px;
+        background-color: transparent;
+        border-radius: 50%;
+        transition: all 0.50s ease-in-out;
+    }
+
+    .navbar li  a:hover ~ .nav-dot {
+        background-color: white;
+    }
+  }

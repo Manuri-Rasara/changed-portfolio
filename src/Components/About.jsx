@@ -46,7 +46,7 @@ export default function About() {
                     initial="hidden"
                     animate={show ? "show" : "hidden"}
                     variants={fadeIn("right", 0.2)} // Fade in from the right for the text
-                >
+                    className='fullcontent'>
                     <p>Hi! 👋, I am Manuri Rasara, an undergraduate at the University of Ruhuna and a passionate software engineer.</p>
                     <br/>
                     <strong>Creative Origins ✨</strong> <br/>

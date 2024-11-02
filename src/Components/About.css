@@ -78,3 +78,47 @@
     
 }
 
+@media only screen and (max-width: 414px) {
+    .content{
+        margin-top: 80%;
+        width: 90%;
+       
+        
+    }
+
+    .fullcontent{
+        width: 170%;
+        margin-left: 10%;
+        order:3;
+    }
+
+    .content p strong{
+        
+        justify-content: justify;
+        width: 100%;
+    }
+
+    .button button {
+        margin-left: 14.5%;
+    }
+
+    .user{
+        width:200px;
+        margin-left: 40%;
+        margin-top: -10%;
+        order: 2;
+
+    }
+    .user img{
+        width: 300px;
+    }
+
+    .title{
+        margin-left: 70%;
+        order: 1;
+    }
+
+    .dot{
+        display: none;
+    }
+  }

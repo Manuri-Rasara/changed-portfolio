@@ -28,3 +28,9 @@
     width: 100px;
     padding: 10px;
 }
+
+@media only screen and (max-width: 414px) {
+    .title{margin-left: 2%;}
+
+   
+  }

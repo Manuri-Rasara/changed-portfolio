@@ -77,3 +77,9 @@
     color: rgb(61, 60, 60);
     font-size: 40px;
 }
+
+@media only screen and (max-width: 414px) {
+    .cardflexbox{
+        margin-left: 9%;
+    }  
+  }

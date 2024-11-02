@@ -10,24 +10,27 @@ import React, { useEffect, useState } from 'react';
 
 import { FaEye } from 'react-icons/fa'
 export default function Projects() {
-    const [show, setShow] = useState(false); // Initially set to false to hide content
+    const [shouldAnimate, setShouldAnimate] = useState(false);
+    const [lastScrollTop, setLastScrollTop] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollTop = window.pageYOffset;
 
-            // Show content only when scrolling down
-            if (currentScrollTop > 0) {
-                setShow(true); // Show content when scrolled down
+            // Show content when scrolling down
+            if (currentScrollTop > lastScrollTop) {
+                setShouldAnimate(true); // Trigger animation when scrolling down
             } else {
-                setShow(false); // Hide content at the top of the page
+                setShouldAnimate(false); // Optional: stop animation when scrolling up
             }
+
+            setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop); // Prevent negative values
         };
 
         // Add scroll event listener
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll); // Cleanup
-    }, []);
+    }, [lastScrollTop]);
 
   return (
     <div>
@@ -40,11 +43,11 @@ export default function Projects() {
         <div className='flexbox'>
         <motion.div 
             className='card card1'
-            variants={fadeIn('up', 0.3)} // 'up' for direction and 0.3 for delay
-            initial="hidden" 
-            whileInView="show" 
-            viewport={{ amount: 0.5 }}
-             
+            variants={fadeIn('up', 0.3)}
+                        initial="hidden" 
+                        animate={shouldAnimate ? "show" : "hidden"} // Control animation based on scroll
+                        whileInView="show" // Optional: ensure it shows when in view
+                        viewport={{ once: false }} // Allow multiple triggers
         >
                         <div className='poster'>
                     <div className='title'>VR ZONE</div>
@@ -55,10 +58,11 @@ export default function Projects() {
 
             <motion.div 
             className='card card1'
-            variants={fadeIn('up', 0.3)} // 'up' for direction and 0.3 for delay
-            initial="hidden" 
-            whileInView="show" 
-            viewport={{ amount: 0.5 }}
+            variants={fadeIn('up', 0.3)}
+                        initial="hidden" 
+                        animate={shouldAnimate ? "show" : "hidden"} // Control animation based on scroll
+                        whileInView="show" // Optional: ensure it shows when in view
+                        viewport={{ once: false }} // Allow multiple triggers
           
         >
                 <div className='poster'>
@@ -70,10 +74,11 @@ export default function Projects() {
 
             <motion.div 
             className='card card1'
-            variants={fadeIn('up', 0.3)} // 'up' for direction and 0.3 for delay
-            initial="hidden" 
-            whileInView="show"
-            viewport={{ amount: 0.5 }} 
+            variants={fadeIn('up', 0.3)}
+                        initial="hidden" 
+                        animate={shouldAnimate ? "show" : "hidden"} // Control animation based on scroll
+                        whileInView="show" // Optional: ensure it shows when in view
+                        viewport={{ once: false }} // Allow multiple triggers
          
         >
                 <div className='poster'>
@@ -86,11 +91,11 @@ export default function Projects() {
 
             <motion.div 
             className='card card1'
-            variants={fadeIn('up', 0.3)} // 'up' for direction and 0.3 for delay
-            initial="hidden" 
-            whileInView="show" 
-            viewport={{ amount: 0.5 }}
-          
+            variants={fadeIn('up', 0.3)}
+                        initial="hidden" 
+                        animate={shouldAnimate ? "show" : "hidden"} // Control animation based on scroll
+                        whileInView="show" // Optional: ensure it shows when in view
+                        viewport={{ once: false }} // Allow multiple triggers
         >
                 <div className='poster'>
                     <div className='title'>VR ZONE</div>
@@ -102,10 +107,11 @@ export default function Projects() {
             <motion.div 
             className='card card1'
             
-            variants={fadeIn('up', 0.3)} // 'up' for direction and 0.3 for delay
-            initial="hidden" 
-            whileInView="show" 
-            viewport={{ amount: 0.5 }}
+            variants={fadeIn('up', 0.3)}
+                        initial="hidden" 
+                        animate={shouldAnimate ? "show" : "hidden"} // Control animation based on scroll
+                        whileInView="show" // Optional: ensure it shows when in view
+                        viewport={{ once: false }} // Allow multiple triggers
       
         >
                 <div className='poster'>
@@ -118,11 +124,11 @@ export default function Projects() {
 
             <motion.div 
             className='card card1'
-            variants={fadeIn('up', 0.3)} // 'up' for direction and 0.3 for delay
+            variants={fadeIn('up', 0.3)}
             initial="hidden" 
-            whileInView="show" 
-            
-            viewport={{ amount: 0.5 }}
+            animate={shouldAnimate ? "show" : "hidden"} // Control animation based on scroll
+            whileInView="show" // Optional: ensure it shows when in view
+            viewport={{ once: false }} // Allow multiple triggers
        
         >
                 <div className='poster'>
