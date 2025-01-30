@@ -7,32 +7,41 @@ import Projects from './Components/Projects';
 import Help from './Components/Help';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
-import Load from './Components/Load';
+import Project1 from './Components/Project1';
+import Loader from './Components/Loader';
+import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Education from './Components/Education'
 
 function App() {
-  const [loadingComplete, setLoadingComplete] = useState(false);
+  const [showContent, setShowContent] = useState(false);
 
-  const handleLoadingComplete = () => {
-    setLoadingComplete(true);
+  // Function to show main content when Start button is clicked
+  const handleStart = () => {
+    setShowContent(true);
   };
 
   return (
-    <>
-      {!loadingComplete ? (
-        <Load onLoadingComplete={handleLoadingComplete} />
+    <Router>
+      {!showContent ? (
+        <Loader onStart={handleStart} />
       ) : (
-        <>
-          <Navbar />
+        <div className='website' style={{ overflowX: 'hidden' }}>
+           <Navbar />
           <Homecontent />
-          <About />
-          <Technologies />
-          <Projects />
+          <About/>
+          <Education/>
+          <Technologies/>
+          <Project1/>
           <Help />
-          <Contact />
-          <Footer />
-        </>
+          <Contact/>
+          
+        
+          <Footer /> 
+          
+        </div>
       )}
-    </>
+    </Router>
   );
 }
 

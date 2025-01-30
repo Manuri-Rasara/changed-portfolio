@@ -8,6 +8,12 @@
 }
 .footerlinks li {
     padding: 7px;
+    
+}
+
+.footerlinks li  a{
+ 
+    
 }
 
 .lastfooter{
@@ -34,6 +40,7 @@
         flex-direction: column; /* Stack items vertically */
         text-align: center;
         margin: 20px auto;
+        width: 80%;
     }
 
     .footerlinks {

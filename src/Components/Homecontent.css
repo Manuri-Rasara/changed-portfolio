@@ -1,33 +1,46 @@
 /* Base styles for larger screens */
 .maincontent {
     font-size: 120px;
-    margin: 15% 2% 2% 8%;
+    margin: 7% 2% 2% 8%;
     font-family: 'PP Mori', sans-serif;
+    color: rgb(173, 169, 169);
+    
 }
 
 .subcontent {
-    margin-top: -110px;
-    margin-left: 60%;
+    margin-top: -120px;
+    margin-left: 50%;
     font-family: 'PP Mori', sans-serif;
+    color: rgb(173, 169, 169);
+}
+.power{
+    width: 100px;
+    ;
+   
 }
 
-.circle{
+.arrow{
+    padding-left: 7px;
+    width: 30px;
+}
+
+
+.circle {
     position: relative;
-    width: 100px;
-    height: 100px;
+    width: 150px; /* Increase size */
+    height: 150px; /* Increase size */
     border-radius: 50%;
     background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
-.logo{
+.logo {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background: url(../Assets/world.png);
+    width: 70px; /* Adjust size of inner logo */
+    height: 70px; /* Adjust size of inner logo */
+    background: url(../Assets/world1.png);
     border-radius: 50%;
     background-size: cover;
 }
@@ -37,34 +50,33 @@
     width: 100%;
     height: 100%;
     animation: rotateText 10s linear infinite;
-    color: black;
-    
+    color: rgb(173, 169, 169);
 }
+
 @keyframes rotateText {
-    0%
-    {
+    0% {
         transform: rotate(-360deg);
     }
-
-    100%
-    {
+    100% {
         transform: rotate(0deg);
     }
 }
+
 .text span {
     position: absolute;
     left: 50%;
-    font-size: 0.8rem;
-    transform-origin: 0 50px; /* Adjust the radius as needed */
+    font-size: 1rem; /* Slightly increase font size */
+    transform-origin: 0 75px; /* Adjust radius for expanded circle */
     line-height: 1;
     white-space: nowrap;
-    color: black;
+    color: rgb(173, 169, 169);
 }
+
 
 /* Responsive styles for smaller screens */
 .circle{
-    margin-left: 70%;
-    margin-top: -17%;
+    margin-left: 75%;
+    margin-top: -16%;
 }
 
 .scroll a{
@@ -74,30 +86,55 @@
 }
 
 
-@media only screen and (max-width: 1090px) {
+@media only screen and (max-width: 1500px)and (min-width:1300px) {
     .maincontent {
-        font-size: 80px; /* Adjust font size as needed */
-        margin: 24% 4% 0 4%; /* Center the main content */
+        font-size: 120px;
+        margin: 10% 4% 0 9%;
+        text-align: left;
+        
+    }
+    .subcontent {
+        margin: -7% auto 0;
+        margin-left: 55%;
+        text-align: left;
+        
+    }
+}
+
+
+@media only screen and (max-width: 1299px) and (min-width:1095px) {
+    .maincontent {
+        font-size:80px; /* Adjust font size as needed */
+        margin: 10% 4% 0 4%; /* Center the main content */
         text-align: left;
     }
 
     .subcontent {
-        margin: 20px auto 0; /* Center the subcontent below */
-        margin-left: 64%;
-        margin-top: -70px;
+        margin: -6% auto 0; /* Center the subcontent below */
+        margin-left: 44%;
         text-align: left;
     }
 
     .circle{
         margin-top: -25%;
     }
-
 }
 
-@media only screen and (max-width: 768px) {
+
+   
+
+
+ 
+    
+
+
+
+
+
+@media only screen and (max-width: 1095px) and (min-width:700px) {
     .maincontent {
         font-size:80px; /* Adjust font size as needed */
-        margin: 24% 4% 0 4%; /* Center the main content */
+        margin: 10% 4% 0 4%; /* Center the main content */
         text-align: left;
     }
 
@@ -108,27 +145,236 @@
     }
 
     .circle{
-        margin-top: -57%;
+        margin-top: -25%;
     }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 700px)and (min-width:385px) {
     .maincontent {
-        font-size:65px; /* Adjust font size as needed */
-        margin: 24% 4% 0 4%; /* Center the main content */
+        font-size:60px; /* Adjust font size as needed */
+        margin: 10% 2% 0 7%; /* Center the main content */
         text-align: left;
+      overflow-x: hidden;
+        width: 85%;
     }
 
     .subcontent {
         margin: 20px auto 0; /* Center the subcontent below */
-        margin-left: 4%;
+        margin-left: 7%;
         text-align: left;
+       
+       
+        width: 83%;
     }
 
     .circle{
         margin-top: -63%;
+        margin-left: 60%;
+       
+    }
+    
+
+    .power{
+            width: 60px;
+    }
+
+    .circle {
+        position: relative;
+        width: 80px; /* Reduced size */
+        height: 80px; /* Reduced size */
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo {
+        position: absolute;
+        width: 40px; /* Reduced size */
+        height: 40px; /* Reduced size */
+        background: url(../Assets/world1.png);
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    .text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: rotateText 10s linear infinite;
+        color: rgb(173, 169, 169);
+    }
+    
+    @keyframes rotateText {
+        0% {
+            transform: rotate(-360deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .text span {
+        position: absolute;
+        left: 50%;
+        font-size: 0.7rem; /* Reduced font size */
+        transform-origin: 0 40px; /* Adjust radius to match smaller circle */
+        line-height: 1;
+        white-space: nowrap;
+        color: rgb(173, 169, 169);
+    }
+    
+    
+    /* Responsive styles for smaller screens */
+    .circle{
+        margin-left: 75%;
+        margin-top: -19%;
     }
   }
+
+  @media only screen and (max-width: 385px)  {
+    .maincontent {
+        font-size:55px; /* Adjust font size as needed */
+        margin: 24% 4% 0 7%; /* Center the main content */
+        text-align: left;
+    }
+
+    .subcontent {
+        margin: 20px auto 0; /* Center the subcontent below */
+        margin-left: 7%;
+        text-align: left;
+    }
+    .power{
+        width: 50px;
+    }
+
+   
+
+    .circle {
+        position: relative;
+        width: 80px; /* Reduced size */
+        height: 80px; /* Reduced size */
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo {
+        position: absolute;
+        width: 40px; /* Reduced size */
+        height: 40px; /* Reduced size */
+        background: url(../Assets/world1.png);
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    .text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: rotateText 10s linear infinite;
+        color: rgb(173, 169, 169);
+    }
+    
+    @keyframes rotateText {
+        0% {
+            transform: rotate(-360deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .text span {
+        position: absolute;
+        left: 50%;
+        font-size: 0.7rem; /* Reduced font size */
+        transform-origin: 0 40px; /* Adjust radius to match smaller circle */
+        line-height: 1;
+        white-space: nowrap;
+        color: rgb(173, 169, 169);
+    }
+    
+    
+    /* Responsive styles for smaller screens */
+    .circle{
+        margin-left: 73%;
+        margin-top: -20%;
+    }
+  }
+
+
+  @media only screen and (max-width: 330px) and (min-width:320px) {
+    .maincontent {
+        font-size:50px; /* Adjust font size as needed */
+        margin: 24% 4% 0 7%; /* Center the main content */
+        text-align: left;
+    }
+
+    .subcontent {
+        margin: 20px auto 7%; /* Center the subcontent below */
+        margin-left: 7%;
+        text-align: left;
+    }
+
+    .circle {
+        position: relative;
+        width: 80px; /* Reduced size */
+        height: 80px; /* Reduced size */
+        border-radius: 50%;
+        background: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .logo {
+        position: absolute;
+        width: 40px; /* Reduced size */
+        height: 40px; /* Reduced size */
+        background: url(../Assets/world1.png);
+        border-radius: 50%;
+        background-size: cover;
+    }
+    
+    .text {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        animation: rotateText 10s linear infinite;
+        color: rgb(173, 169, 169);
+    }
+    
+    @keyframes rotateText {
+        0% {
+            transform: rotate(-360deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    
+    .text span {
+        position: absolute;
+        left: 50%;
+        font-size: 0.7rem; /* Reduced font size */
+        transform-origin: 0 40px; /* Adjust radius to match smaller circle */
+        line-height: 1;
+        white-space: nowrap;
+        color: rgb(173, 169, 169);
+    }
+    
+    
+    /* Responsive styles for smaller screens */
+    .circle{
+        margin-left: 70%;
+        margin-top: -23%;
+    }
+  }
+
 
 
 

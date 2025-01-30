@@ -40,7 +40,7 @@ export default Load;
 const Loading = styled.div`
   height: 100vh;
   width: 100vw;
-  background-color: #cec9c959;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,7 +54,7 @@ const Loading = styled.div`
 const ProgressBar = styled.div`
   width: 30%;
   height: 5px;
-  background-color: #b0a7a7;
+  background-color: rgb(54, 53, 53);
   border-radius: 5px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -62,20 +62,20 @@ const ProgressBar = styled.div`
 
 const Progress = styled.div`
   height: 100%;
-  background-color:black;
+  background-color:rgb(173, 169, 169);
   transition: width 0.4s ease-out;
 `;
 
 const Button = styled.button`
-  background-color: #cec9c959;
-  color: black;
+  background-color: black;
+  color: rgb(54, 53, 53);
   border: none;
   border-radius:24px;
   padding: 10px 20px;
   font-size: 15px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  border:2px solid black;
+  border:2px solid rgb(54, 53, 53);
 
   
 `;

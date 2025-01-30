@@ -1,0 +1,452 @@
+.Cardflexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.Card {
+    width: 35%;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #1c092a, rgba(128, 0, 128, 0));
+    border: 1px solid #1c092a;
+    color: aliceblue;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+
+
+.Card:hover{
+    background: linear-gradient(to bottom, #140320, rgba(128, 0, 128, 0));
+}
+.Card:hover .cardposter {
+
+    transform: translateY(-9px);
+    transition: transform 0.3s  ease;
+   
+  }
+
+.cardarrow{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.arrbtn svg {
+    color: rgb(173, 169, 169);; /* Color of the arrow icon (can be customized) */
+    font-size: 20px; /* Adjust size of the arrow icon */
+  }
+
+  .arrbtn:hover {
+    transform: scale(1.2); 
+  }
+.cardarrow .arrbtn{
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border : 1px solid rgba(255, 255, 255, 0.05); 
+    padding: 15px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+   cursor: pointer;
+}
+
+.allcards {
+    margin-top: 10%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.Cardcontent{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 10%;
+    padding-top: 10%;
+    transform: translateY(0);
+    transition: transform 0.3s  ease;
+    
+}
+.Cardmaintext{
+    text-align: justify;
+    color: rgb(54, 53, 53);
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.Cardsubtext{
+    text-align: left;
+    color: rgb(173, 169, 169);
+    width: 85%;
+}
+
+
+.cardposter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transform: translateY(0);
+    transition: transform 0.3s  ease;
+}
+
+.cardposter img {
+    width: 90%;
+    object-fit: cover;  /* Ensures image covers the space without distorting */
+    height: 100%;  /* Make the image take the full height of the .cardposter */
+    
+}
+
+
+.Card2 .cardposter img {
+    width: 110%;  /* Adjust width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-top: 44px;
+    
+}
+
+.Card2 {
+    width: 35%;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #2e2e2f, rgba(132, 131, 132, 0));
+    border: 1px solid #373638;
+    color: aliceblue;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+.Card2:hover{
+    background: linear-gradient(to bottom, #222223, rgba(52, 51, 52, 0));
+}
+.Card2maintext{
+    text-align: justify;
+    color: rgb(151, 149, 149);
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.Card2subtext{
+    text-align: left;
+    color: rgb(173, 169, 169);
+    width: 85%;
+}
+
+
+
+
+
+
+
+
+
+
+
+.Card3 .cardposter img {
+    width: 120%;  /* Adjust width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-top: 44px;
+    
+}
+
+.Card3 {
+    width: 35%;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #2e2e2f, rgba(132, 131, 132, 0));
+    border: 1px solid #373638;
+    color: aliceblue;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+.Card3:hover{
+    background: linear-gradient(to bottom, #222223, rgba(52, 51, 52, 0));
+}
+.Card3maintext{
+    text-align: justify;
+    color: rgb(151, 149, 149);
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.Card3subtext{
+    text-align: left;
+    color: rgb(173, 169, 169);
+    width: 85%;
+}
+
+
+.projecttitle{
+    color: rgb(54, 53, 53);
+    text-align: center;
+    padding-top: 10%;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Card4 .cardposter img {
+    width: 80%;  /* Adjust width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-top: 44px;
+    
+}
+
+.Card4 {
+    width: 35%;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #c67a10, rgba(226, 149, 7, 0));
+    border: 1px solid #f46d0658;
+    color: aliceblue;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+.Card4:hover{
+    background: linear-gradient(to bottom, #d0770a, rgba(203, 119, 9, 0));
+}
+.Card4maintext{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.Card4subtext{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    width: 85%;
+}
+
+
+.projecttitle{
+    color: rgb(54, 53, 53);
+    text-align: center;
+    padding-top: 10%;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.Card4 .arrbtn svg {
+    color: rgb(238, 231, 228);; /* Color of the arrow icon (can be customized) */
+    font-size: 20px; /* Adjust size of the arrow icon */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .Card5 .cardposter img {
+    width: 80%;  /* Adjust width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-top: 44px;
+    
+}
+
+.Card5 {
+    width: 35%;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #2B82D9, rgba(226, 149, 7, 0));
+    border: 1px solid #020b4f58;
+    color: aliceblue;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+.Card5:hover{
+    background: linear-gradient(to bottom, #0c2b4a, rgba(203, 119, 9, 0));
+}
+.Card5maintext{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.Card5subtext{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    width: 85%;
+}
+
+
+.projecttitle{
+    color: rgb(54, 53, 53);
+    text-align: center;
+    padding-top: 10%;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.Card5 .arrbtn svg {
+    color: rgb(238, 231, 228);; /* Color of the arrow icon (can be customized) */
+    font-size: 20px; /* Adjust size of the arrow icon */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .Card6 .cardposter img {
+    width: 80%;  /* Adjust width as needed */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 10px;
+    margin-top: 50px;
+    
+}
+
+.Card6 {
+    width: 35%;
+    border-radius: 30px;
+    background: linear-gradient(to bottom, #ad2bd9, rgba(226, 149, 7, 0));
+    border: 1px solid #020b4f58;
+    color: aliceblue;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+
+}
+  .Card6:hover{
+    background: linear-gradient(to bottom, #460c4a, rgba(203, 119, 9, 0));
+}
+.Card6maintext{
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    padding-bottom: 5px;
+    font-weight: 700;
+}
+
+.Card6subtext{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    width: 85%;
+}
+
+
+.projecttitle{
+    color: rgb(54, 53, 53);
+    text-align: center;
+    padding-top: 10%;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.Card6 .arrbtn svg {
+    color: rgb(238, 231, 228);; /* Color of the arrow icon (can be customized) */
+    font-size: 20px; /* Adjust size of the arrow icon */
+  }
+
+
+
+
+@media only screen and (max-width: 768px){
+    .Cardflexbox {
+        flex-direction: column !important; /* Ensure the flex direction is column */
+        gap: 35px !important; /* Adjust gap between cards */
+    }
+
+    .Card {
+        width: 75% !important; /* Ensure the card takes up more space */
+        height: 430px !important; /* Keep the height large */
+        margin: 0 auto; /* Center the card */
+    }
+}
+
+
+@media only screen and (max-width: 416px) and (min-width: 385px) {
+    .Cardflexbox {
+        flex-direction: column !important; /* Ensure the flex direction is column */
+        gap: 35px !important; /* Adjust gap between cards */
+    }
+
+    .Card {
+        width: 75% !important; /* Ensure the card takes up more space */
+        height: 300px !important; /* Keep the height large */
+        margin: 0 auto; /* Center the card */
+    }
+}
+
+@media only screen and (max-width:385px)
+
+{
+
+    .Cardflexbox {
+        flex-direction: column !important; /* Ensure the flex direction is column */
+        gap: 35px !important; /* Adjust gap between cards */
+    }
+
+    .Card {
+        width: 75% !important; /* Ensure the card takes up more space */
+        height: 250px !important; /* Keep the height large */
+        margin: 0 auto; /* Center the card */
+    }
+}
+
+@media only screen and (max-width: 330px) and (min-width:320px){
+
+    .Cardflexbox {
+        flex-direction: column !important; /* Ensure the flex direction is column */
+        gap: 35px !important; /* Adjust gap between cards */
+    }
+
+    .Card {
+        width: 75% !important; /* Ensure the card takes up more space */
+        height: 250px !important; /* Keep the height large */
+        margin: 0 auto; /* Center the card */
+    }
+}

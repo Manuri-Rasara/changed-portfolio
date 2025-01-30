@@ -20,7 +20,8 @@ import { motion } from 'framer-motion';
 import { fadeIn } from './Variants';
 
 export default function Technologies() {
-    const [show, setShow] = useState(false); // State to control visibility
+    const [show, setShow] = useState(false); // Initially set to false to hide content
+    const [isSmallScreen, setIsSmallScreen] = useState(false); // Track if the screen is small
 
     useEffect(() => {
         const handleScroll = () => {
@@ -34,20 +35,32 @@ export default function Technologies() {
             }
         };
 
-        // Add scroll event listener
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll); // Cleanup
-    }, []);
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 768); // Change 768 to the desired max width
+        };
 
+        // Add scroll and resize event listeners
+        window.addEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
+        
+        // Initial check for screen size
+        handleResize();
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll); // Cleanup
+            window.removeEventListener('resize', handleResize); // Cleanup
+        };
+    }, []);
     return (
-        <div>
+       <div className='maintech'>
             <motion.div
                 initial="hidden"
                 animate={show ? "show" : "hidden"}
-                variants={fadeIn("up", 0.7)} // Fade in from the up
+                variants={fadeIn("up", 0.7)}
                 className='tech'
             >
                 <p className='title'>TECH STACK</p>
+                <div className='imageslogo'>
                 <img src={HTML} alt="HTML" />
                 <img src={CSS} alt="CSS" />
                 <img src={JS} alt="JavaScript" />
@@ -64,7 +77,8 @@ export default function Technologies() {
                 <img src={Ps} alt="Adobe Photoshop" />
                 <img src={figma} alt="Figma" />
                 <img src={Xd} alt="Adobe XD" />
-            </motion.div>
-        </div>
+                </div>
+            </motion.div></div>
+       
     );
 }

@@ -3,6 +3,7 @@ import { FaArrowRightLong } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from './Variants';
 import React, { useEffect, useRef, useState } from 'react';
+import user from '../Assets/user.png'
 
 export default function Contact() {
     const [show, setShow] = useState(false); // Initially set to false to hide content
@@ -34,18 +35,24 @@ export default function Contact() {
 
     return (
         <div ref={contactRef}> {/* Attach ref to the main div */}
-            <div className='contactcontent'>
+            <div className='contactcontent' id="contact">
                 <motion.p
                     initial="hidden"
                     animate={show ? "show" : "hidden"}
                     variants={fadeIn("left", 0.2)} // Fade in from the left
                 >
-                    💡 Let’s talk about a project, collaboration, or an idea you may have.<strong>I prefer working as a software engineer.</strong>
+                <img src={user} className='pic'/>Let’s talk about a project, collaboration, or an idea you may have.<strong> I prefer working as a software engineer.</strong>
                 </motion.p>
                 <div className='touch'>
-                    <button>GET IN TOUCH&nbsp;</button>
+                <a href="mailto:manurirasarahewage@gmail.com">
+                <button>GET IN TOUCH</button>
+                </a>
+                
+
+
                 </div>
             </div>
+            
         </div>
     );
 }

@@ -2,24 +2,27 @@
     display: flex;
     align-items: center;
     width: 200px;
-    margin-left: 7%;
+    margin-left: 45%;
     margin-top: 7%;
 
 }
 
-.Pdot {
+/* .Pdot {
     background: black;
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    margin-right: 5px; /* Set the spacing to exactly 5px */
+    margin-right: 5px; 
     margin-bottom: 5px;
    
-}
+} */
 
 .Ptitle strong {
     margin: 0; /* Remove any unwanted extra margin */
     font-size: 20PX;
+    color: rgb(54, 53, 53);
+    font-size: 1.9rem;
+    
    
 }
 
@@ -50,7 +53,7 @@
 
 
 .flexbox{
-    margin-left: 7%;
+   
     margin-top: 7%;
 }
 
@@ -78,7 +81,7 @@
     padding: 10px;
 } */
 .flexbox{
-    margin-left: 7%;
+    
     margin-top: 7%;
 }
 
@@ -125,7 +128,9 @@
     height: 210px;
     color: white;
     opacity: 0; /* Initially hidden */
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(1, 1, 1, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -135,7 +140,7 @@
     font-size: 60px;
     padding: 10px;
     margin-top: -12px;
-    cursor: url('../Assets//pointer.png'),auto;
+
     transition: opacity 0.4s ease; /* Smooth transition */
 }
 
@@ -147,11 +152,189 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
+    justify-content: center;
+
 }
 
 @media only screen and (max-width: 414px) {
     .flexbox{
-        margin-left: 2%;
+        
         margin-top: 7%;
     }
+  }
+
+  @media only screen and (max-width: 416px)and (min-width:385px)  {
+    .flexbox{
+     justify-content: center;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .project-container{
+        margin-left: 34%;
+        display: flex;
+        align-items: center;
+    }
+
+    .poster{
+        width: 350px;
+    }
+
+    .poster .title {
+        margin-left: 70%;
+        margin-top: 65%;
+        z-index: 10;
+        color: white;
+        font-weight: 600;
+        position: absolute;
+    }
+    
+    .poster .used img{
+        width: 20px;
+        background-color: white;
+        border-radius: 7px;
+        margin-top: 270px;
+      
+       
+    }
+    
+    .eye {
+        width: 300px;
+        height: 180px;
+        color: white;
+        opacity: 0; /* Initially hidden */
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20; /* Make sure it's on top */
+        border: none;
+        font-size: 60px;
+        padding: 10px;
+        margin-top: -12px;
+     
+        transition: opacity 0.4s ease; /* Smooth transition */
+    }
+
+    
+  }
+
+  @media only screen and (max-width: 385px){
+
+    .flexbox{
+        
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+    }
+
+    .poster{
+        width: 350px;
+    }
+
+    .poster .title {
+        
+        margin-top: 69%;
+        z-index: 10;
+        color: white;
+        font-weight: 600;
+        position: absolute;
+        margin-left: 70%;
+    }
+    
+    .poster .used img{
+        width: 20px;
+        background-color: white;
+        border-radius: 7px;
+        margin-top: 270px;
+        margin-left: 283px;
+       
+       
+    }
+    
+    .eye {
+        width: 300px;
+        height: 180px;
+        color: white;
+        opacity: 0; /* Initially hidden */
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20; /* Make sure it's on top */
+        border: none;
+        font-size: 60px;
+        padding: 10px;
+        margin-top: -12px;
+       
+        transition: opacity 0.4s ease; /* Smooth transition */
+    }
+
+    .project-container{
+        margin-left: 34%;
+    }
+  }
+
+
+ 
+  @media only screen and (max-width: 330px) and (min-width:316px){
+
+
+
+    .project-container{
+        margin-left: 30%;
+    }
+    .flexbox{
+        
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+    }
+
+    .poster{
+        width: 350px;
+    }
+
+    .poster .title {
+        
+        margin-top: 69%;
+        z-index: 10;
+        color: white;
+        font-weight: 600;
+        position: absolute;
+    }
+    
+    .poster .used img{
+        width: 20px;
+        background-color: white;
+        border-radius: 7px;
+        margin-top: 270px;
+        margin-left: 290px;
+       
+    }
+    
+    .eye {
+        width: 348px;
+        height: 180px;
+        color: white;
+        opacity: 0; /* Initially hidden */
+        background: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 20; /* Make sure it's on top */
+        border: none;
+        font-size: 60px;
+        padding: 10px;
+        margin-top: -12px;
+        
+        transition: opacity 0.4s ease; /* Smooth transition */
+    }
+
   }

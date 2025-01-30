@@ -35,7 +35,7 @@ export default function Projects() {
   return (
     <div>
       <div className='project-container'>
-        <button className='Pdot'></button>
+        {/* <button className='Pdot'></button> */}
         <span className='Ptitle'><strong>PROJECTS</strong></span>
         </div>
         
@@ -52,7 +52,7 @@ export default function Projects() {
                         <div className='poster'>
                     <div className='title'>VR ZONE</div>
                     <div className='used'><img src={figma}/></div>
-                    <button className='eye'><FaEye/></button>
+                    <button className='eye'><FaEye color='black'/></button>
                 </div>
             </motion.div>
 
@@ -68,7 +68,7 @@ export default function Projects() {
                 <div className='poster'>
                     <div className='title'>VR ZONE</div>
                     <div className='used'><img src={figma}/></div>
-                    <button className='eye'><FaEye/></button>
+                    <button className='eye'><FaEye color='black'/></button>
                 </div>
                 </motion.div>
 
@@ -84,7 +84,7 @@ export default function Projects() {
                 <div className='poster'>
                     <div className='title'>VR ZONE</div>
                     <div className='used'><img src={figma}/></div>
-                    <button className='eye'><FaEye/></button>
+                    <button className='eye'><FaEye color='black'/></button>
                 </div>
                 </motion.div>
 
@@ -100,7 +100,7 @@ export default function Projects() {
                 <div className='poster'>
                     <div className='title'>VR ZONE</div>
                     <div className='used'><img src={figma}/></div>
-                    <button className='eye'><FaEye/></button>
+                    <button className='eye'><FaEye color='black'/></button>
                 </div>
                 </motion.div>
 
@@ -117,7 +117,7 @@ export default function Projects() {
                 <div className='poster'>
                     <div className='title'>VR ZONE</div>
                     <div className='used'><img src={figma}/></div>
-                    <button className='eye'><FaEye/></button>
+                    <button className='eye'><FaEye color='black'/></button>
                 </div>
                 </motion.div>
 
@@ -134,7 +134,7 @@ export default function Projects() {
                 <div className='poster'>
                     <div className='title'>VR ZONE</div>
                     <div className='used'><img src={figma}/></div>
-                    <button className='eye'><FaEye/></button>
+                    <button className='eye'><FaEye color='black'/></button>
                 </div>
                 </motion.div>
         </div>

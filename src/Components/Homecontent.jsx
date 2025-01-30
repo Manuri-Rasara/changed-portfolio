@@ -1,8 +1,15 @@
 import React, { useRef, useEffect } from 'react';
 import './Homecontent.css';
-import angle from '../Assets/angle.png'
-import {motion} from 'framer-motion'
-import { fadeIn } from './Variants';
+import angle from '../Assets/angle.png';
+import { motion } from 'framer-motion';
+import arrowdown from '../Assets/arrowdown.png';
+import power from '../Assets/power.png'
+
+// Define fade-in variant
+const fadeInVariant = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 1.5, ease: 'easeOut' } }
+};
 
 export default function Homecontent() {
   const textRef = useRef(null);
@@ -24,24 +31,44 @@ export default function Homecontent() {
 
   return (
     <>
-      <div className='maincontent'>
-        <span>DIGITAL<br /></span>
+      {/* Fade-in effect for main content */}
+      <motion.div
+        className="maincontent"
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+      >
+        <span>DIGITAL <img src={power} className='power'></img><br /></span>
         <span>ARCHITECT<br /></span>
-      </div>
-      <div className='subcontent'>
-        <span>Specialized in -  <br />Software Engineering | <br />Web Development | UI/UX<br /></span>
-      </div>
+      </motion.div>
 
-      <div className='circle'>
-        <div className='logo'></div>
-        <div className='text'>
-          <p ref={textRef}>  Located in the Sri Lanka </p>
+      {/* Fade-in effect for subcontent */}
+      <motion.div
+        className="subcontent"
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+      >
+        <span className='SmalltextHome'>Specialized in -  <br />Software Engineering | <br />Web Development | UI/UX<br /></span>
+      </motion.div>
+
+      {/* Fade-in effect for circle container */}
+      <motion.div
+        className="circle"
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+      >
+        <div className="logo"></div>
+        <div className="text">
+          <p ref={textRef}>Located in the Sri Lanka</p>
         </div>
-      </div>
+      </motion.div>
 
-      {/* <div className='scroll'>
-        <a href='#'><img src={angle}/></a>
-      </div> */}
+      {/* Optionally, fade-in for the arrow down icon */}
+      {/* <motion.div className="arrowdown" variants={fadeInVariant} initial="hidden" animate="visible">
+        <a href='#'><img src={arrowdown} alt="Arrow Down" /></a>
+      </motion.div> */}
     </>
   );
 }

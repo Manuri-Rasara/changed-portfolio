@@ -34,9 +34,15 @@ export default function Help() {
     return (
         <div ref={helpRef}> {/* Attach ref to the main div */}
             <div className='help-container'>
-                <button className='helpdot'></button>
-                <span className='helptitle'><strong>I CAN HELP YOU WITH...</strong></span>
+                {/* <button className='helpdot'></button> */}
+                <span className='helptitle'><strong>I CAN HELP YOU WITH</strong></span>
             </div>
+           <div className='helpparagraph'>
+           I love helping solve challenges, whether in web development, 
+           design, or software engineering. I'm eager to contribute by 
+           addressing technical issues or bringing fresh ideas to creative 
+           projects. My goal is to support others in achieving their objectives.
+           </div>
             <div className='cardflexbox'>
                 <motion.div
                     className='helpcard'

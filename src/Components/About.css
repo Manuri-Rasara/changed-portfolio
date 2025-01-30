@@ -1,32 +1,87 @@
 .content{
-    margin-top: 23%;
-    margin-left: 7%;
+    display: flex;
     font-size: 20px;
+    color: rgb(173, 169, 169);
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1rem;
+    margin: 20% auto 6% auto;
+    flex-direction: column;
+    
+
+    
+}
+
+
+body{
+    overflow-x: hidden;
 }
 
 .content p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    color: rgb(173, 169, 169);
     justify-content: justify;
-    width: 50%;
+    
+    
 }
 
+.fullcontent{
+  
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+   padding: 5%;
+    width: 80%;
+    border-radius: 24px;
+   
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    border : 1px solid rgba(255, 255, 255, 0.05); 
+}
+/* .firstlineimg{
+    width: 50px;
+} */
+.fullcontent strong{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+.firstline{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.9rem;
+    text-indent: 33%;
+    font-weight: 300;
+}
 .about-container {
     display: flex;
     align-items: center;
-    width: 200px;
+    
+    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    
 }
 
-.dot {
-    background: black;
+/* .dot {
+    background: rgb(173, 169, 169);
     border-radius: 50%;
     width: 10px;
     height: 10px;
-    margin-right: 5px; /* Set the spacing to exactly 5px */
+    margin-right: 5px; 
     margin-bottom: 19px;
    
-}
+} */
 
 .title strong {
-    margin: 0; /* Remove any unwanted extra margin */
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
 }
 
@@ -37,7 +92,7 @@
     font-size: 1rem;
     border-radius: 24px;
     padding: 8px;
-    margin-left: 80px;
+    margin-left: 110px;
     margin-top: 40px;
     cursor: url('../Assets//pointer.png'),auto;
 }
@@ -52,16 +107,17 @@
 }
 
 .user img{
-    width: 400px;
+    width: 450px;
     float: right;
     margin-right: 8%;
+    margin-top: -4%;
 }
 
 @media only screen and (max-width: 768px) {
     
     .content{
-        margin-top: 80%;
-        width: 90%;
+        margin-top: 30%;
+     
        
         
     }
@@ -72,24 +128,102 @@
         width: 100%;
     }
 
-    .button button {
+    /* .button button {
         margin-left: 3.5%;
-    }
+    } */
+    /* .button{
+        width: 80%;
+    } */
     
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 416px)and (min-width:385px) {
     .content{
-        margin-top: 80%;
-        width: 90%;
+        margin-top: 20% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        
        
         
     }
 
     .fullcontent{
-        width: 170%;
-        margin-left: 10%;
+       
+        
+       
+       width: 80%;
+       
         order:3;
+       
+    }
+
+    .fullcontent p{
+        width:90%;
+        
+        
+
+      
+    }
+
+    .content p strong{
+        
+        justify-content: justify;
+        
+    }
+
+    .button button {
+        margin-left: 14.5%;
+    }
+
+    .button{
+        width: 80%;
+        
+    }
+
+    .user{
+        width:200px;
+        margin-left: 36%;
+        margin-top: -10%;
+        order: 2;
+        
+        
+
+    }
+    .user img{
+        width: 150%;
+        
+
+    }
+
+    .title strong{
+        align-items: center;
+        
+        order: 1;
+    }
+
+    .dot{
+        display: none;
+    }
+  }
+
+
+  @media only screen and (max-width:385px) and (min-width:329px) {
+    .content{
+        margin-top: 20% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        
+       
+        
+    }
+
+    .fullcontent{
+        
+       width: 80%;
     }
 
     .content p strong{
@@ -98,6 +232,67 @@
         width: 100%;
     }
 
+    .fullcontent p{
+        width: 80%;
+      
+    }
+
+    .button button {
+        margin-left: 14.5%;
+    }
+
+    /* .user{
+        
+        margin-left: 40%;
+        margin-top: -10%;
+        order: 2;
+
+    }
+    .user img{
+        width: 150%;
+    } */
+
+    .title strong{
+        
+        order: 1;
+        font-size: 1.3rem;
+    }
+
+    .dot{
+        display: none;
+    }
+    .button{
+        width: 80%;
+    }
+    
+  }
+
+  @media only screen and (max-width: 330px) and (min-width:320px) {
+    .content{
+        margin-top: 20% ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+        
+       
+        
+    }
+
+    .fullcontent{
+        
+       width: 80%;
+    }
+
+    .content p strong{
+        
+        justify-content: justify;
+        width: 100%;
+    }
+    .fullcontent p{
+        width: 80%;
+      
+    }
     .button button {
         margin-left: 14.5%;
     }
@@ -110,7 +305,7 @@
 
     }
     .user img{
-        width: 300px;
+        width: 270px;
     }
 
     .title{
@@ -120,5 +315,8 @@
 
     .dot{
         display: none;
+    }
+    .button{
+        width: 80%;
     }
   }
