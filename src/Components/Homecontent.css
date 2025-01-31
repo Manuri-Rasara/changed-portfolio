@@ -442,6 +442,16 @@
       .startbtn .rightarrw {
         font-size: 30px;
       }
+
+      .allicons {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        flex-wrap: wrap;
+        gap: 5px; /* Add spacing between items */
+        margin: 0% 0% 0% 0%;
+        
+      }
+    
   }
 
 

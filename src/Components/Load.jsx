@@ -54,7 +54,7 @@ const Loading = styled.div`
 const ProgressBar = styled.div`
   width: 30%;
   height: 5px;
-  background-color: rgb(54, 53, 53);
+  background-color: #ffdd50;
   border-radius: 5px;
   margin-bottom: 20px;
   overflow: hidden;
