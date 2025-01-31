@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/changed-portfolio/static/css/main.1ecb21fd.css",
+    "main.js": "/changed-portfolio/static/js/main.309f8f73.js",
+    "static/js/453.6cf70de9.chunk.js": "/changed-portfolio/static/js/453.6cf70de9.chunk.js",
+    "static/media/card4project.png": "/changed-portfolio/static/media/card4project.09f845f45fdff2f86278.png",
+    "static/media/card6project.png": "/changed-portfolio/static/media/card6project.962240fe76919b17c01b.png",
+    "static/media/card1project.png": "/changed-portfolio/static/media/card1project.ecaacb74627d2230f3dd.png",
+    "static/media/card3project.png": "/changed-portfolio/static/media/card3project.6e9ad18ea7916fdb0230.png",
+    "static/media/card2project.png": "/changed-portfolio/static/media/card2project.e48bac169311e6340186.png",
+    "static/media/project1.png": "/changed-portfolio/static/media/project1.89681b7425fdd71406f1.png",
+    "static/media/card5project.png": "/changed-portfolio/static/media/card5project.5d62a623430e1dc56ae1.png",
+    "static/media/projectone1.png": "/changed-portfolio/static/media/projectone1.5d15c15546a5e63973ff.png",
+    "static/media/manuri-me.png": "/changed-portfolio/static/media/manuri-me.1d140eef5fda166adcbf.png",
+    "static/media/PHP.png": "/changed-portfolio/static/media/PHP.ea18c8a88a9d6c1643e0.png",
+    "static/media/React.png": "/changed-portfolio/static/media/React.e53d7b957e40d7d2516a.png",
+    "static/media/Berghan-Regular.otf": "/changed-portfolio/static/media/Berghan-Regular.bbf7c893f4ad91b24108.otf",
+    "index.html": "/changed-portfolio/index.html",
+    "main.1ecb21fd.css.map": "/changed-portfolio/static/css/main.1ecb21fd.css.map",
+    "main.309f8f73.js.map": "/changed-portfolio/static/js/main.309f8f73.js.map",
+    "453.6cf70de9.chunk.js.map": "/changed-portfolio/static/js/453.6cf70de9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ecb21fd.css",
+    "static/js/main.309f8f73.js"
+  ]
+}
