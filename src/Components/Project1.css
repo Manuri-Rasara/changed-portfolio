@@ -9,8 +9,8 @@
 .Card {
     width: 35%;
     border-radius: 30px;
-    background: linear-gradient(to bottom, #1c092a, rgba(128, 0, 128, 0));
-    border: 1px solid #1c092a;
+    background: linear-gradient(to bottom, #e223af, rgba(128, 0, 128, 0));
+    border: 1px solid #2a0912;
     color: aliceblue;
     height: 400px;
     overflow: hidden;
@@ -22,7 +22,7 @@
 
 
 .Card:hover{
-    background: linear-gradient(to bottom, #140320, rgba(128, 0, 128, 0));
+    background: linear-gradient(to bottom, #6610a4, rgba(128, 0, 128, 0));
 }
 .Card:hover .cardposter {
 
@@ -74,14 +74,14 @@
 }
 .Cardmaintext{
     text-align: justify;
-    color: rgb(54, 53, 53);
+    color: rgb(255, 255, 255);
     padding-bottom: 5px;
     font-weight: 700;
 }
 
 .Cardsubtext{
     text-align: left;
-    color: rgb(173, 169, 169);
+    color: rgb(255, 255, 255);
     width: 85%;
 }
 

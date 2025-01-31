@@ -1,24 +1,104 @@
+
+.startbtn{
+    background-color:#ffdd50 ;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 50px;
+    width: 10%;
+    margin: 2% 0% 0% 0%;
+    color:black;
+    padding: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.startbtn span {
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Space between icon and text */
+  }
+
+.startbtn .rightarrw{
+    align-items: center;
+    font-size: 50px;
+    color: black;
+}
+
 /* Base styles for larger screens */
-.maincontent {
+.maincontent  {
     font-size: 120px;
-    margin: 7% 2% 2% 8%;
-    font-family: 'PP Mori', sans-serif;
+    margin: 5% 0% 0% 8%;
+   
     color: rgb(173, 169, 169);
+    
     
 }
 
+.maincontent p {
+    font-size: 20px;
+    font-weight: 2;
+    
+}
+
+.maincontent span{
+
+    font-family: 'Berghan';
+    font-weight: 40;
+}
+
 .subcontent {
-    margin-top: -120px;
-    margin-left: 50%;
-    font-family: 'PP Mori', sans-serif;
+    margin: 4% 0% 0% 8%;
+   
+    font-family: 'Berghan';
     color: rgb(173, 169, 169);
 }
+.icon {
+
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 8px;
+    margin: 7px;
+    display: flex;
+  align-items: center;
+  
+  border : 1px solid rgba(255, 255, 255, 0.05); 
+
+
+}
+
+.allicons {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    flex-wrap: wrap;
+    gap: 15px; /* Add spacing between items */
+    margin: 0% 0% 0% 0%;
+    
+  }
+
+.icon a {
+    text-decoration: none;
+    color:rgb(173, 169, 169) ;
+    font-size: 12px;
+    text-align: center;
+}
+
 .power{
-    width: 100px;
+    width: 60px;
     ;
    
 }
 
+.manuri{
+
+    float: right;
+
+}
 .arrow{
     padding-left: 7px;
     width: 30px;
@@ -76,7 +156,7 @@
 /* Responsive styles for smaller screens */
 .circle{
     margin-left: 75%;
-    margin-top: -16%;
+    margin-top: -22%;
 }
 
 .scroll a{
@@ -104,7 +184,7 @@
 
 @media only screen and (max-width: 1299px) and (min-width:1095px) {
     .maincontent {
-        font-size:80px; /* Adjust font size as needed */
+        font-size:60px; /* Adjust font size as needed */
         margin: 10% 4% 0 4%; /* Center the main content */
         text-align: left;
     }
@@ -147,15 +227,47 @@
     .circle{
         margin-top: -25%;
     }
+
+    .power{
+        width: 50px;
+    }
+
+    .startbtn {
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .rightarrw {
+    font-size: 16px;
+  }
+
+  .startbtn {
+    width: 90px;
+    height: 35px;
+    font-size: 14px;
+    padding: 7px;
+  }
+
+  .startbtn .rightarrw {
+    font-size: 30px;
+  }
 }
+
+
 
 @media only screen and (max-width: 700px)and (min-width:385px) {
     .maincontent {
-        font-size:60px; /* Adjust font size as needed */
+        font-size:40px; /* Adjust font size as needed */
         margin: 10% 2% 0 7%; /* Center the main content */
         text-align: left;
       overflow-x: hidden;
         width: 85%;
+    }
+
+    .maincontent p {
+        font-size:20px; /* Adjust font size as needed */
+        
     }
 
     .subcontent {
@@ -175,7 +287,7 @@
     
 
     .power{
-            width: 60px;
+            width: 40px;
     }
 
     .circle {
@@ -231,22 +343,37 @@
         margin-left: 75%;
         margin-top: -19%;
     }
+
+    .startbtn {
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+        padding: 7px;
+      }
+    
+      .startbtn .rightarrw {
+        font-size: 30px;
+      }
   }
 
   @media only screen and (max-width: 385px)  {
     .maincontent {
-        font-size:55px; /* Adjust font size as needed */
+        font-size:40px; /* Adjust font size as needed */
         margin: 24% 4% 0 7%; /* Center the main content */
         text-align: left;
     }
-
+    .maincontent p {
+        font-size:12px; /* Adjust font size as needed */
+        
+    }
     .subcontent {
         margin: 20px auto 0; /* Center the subcontent below */
         margin-left: 7%;
         text-align: left;
+        font-size: 10px;
     }
     .power{
-        width: 50px;
+        width: 20px;
     }
 
    
@@ -304,6 +431,17 @@
         margin-left: 73%;
         margin-top: -20%;
     }
+
+    .startbtn {
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+        padding: 7px;
+      }
+    
+      .startbtn .rightarrw {
+        font-size: 30px;
+      }
   }
 
 
@@ -312,6 +450,11 @@
         font-size:50px; /* Adjust font size as needed */
         margin: 24% 4% 0 7%; /* Center the main content */
         text-align: left;
+    }
+
+    .maincontent p {
+        font-size:10px; /* Adjust font size as needed */
+        
     }
 
     .subcontent {
@@ -376,5 +519,5 @@
   }
 
 
-
+  
 

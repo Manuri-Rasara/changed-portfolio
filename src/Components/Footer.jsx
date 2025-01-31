@@ -12,9 +12,9 @@ export default function Footer() {
         
 
         <ul className='footerlinks'>
-            <li><a href='https://www.linkedin.com/in/manuri-hewage-953930283/'>LinkedIn</a></li>
+            <li><a href='https://www.linkedin.com/in/manurirasarahewage'>LinkedIn</a></li>
             <li><a href='https://github.com/Manuri-Rasara'>GitHub</a></li>
-            <li><a href='#'>Instargrame</a></li>
+            <li><a href='https://www.instagram.com/manuri_rasara?igsh=MXRjdDNwN3I0N2prbA=='>Instargrame</a></li>
         </ul>
 
         

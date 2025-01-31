@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './About.css';
- import user from '../Assets/user.png'; // Comment out the image import if not needed
+ import user from '../Assets/manuri-me.png'; // Comment out the image import if not needed
 import { motion } from 'framer-motion';
 import { fadeIn } from './Variants';
 
@@ -47,8 +47,8 @@ export default function About() {
                 <br/><br/>
 
                 {/* Commenting out the image section */}
-                {/* 
-                {isSmallScreen ? (
+                
+                {/* {isSmallScreen ? (
                     // Show content without animation on small screens
                     <div className='user'>
                         <img src={user} alt="User" />
@@ -63,12 +63,13 @@ export default function About() {
                     >
                         <img src={user} alt="User" />
                     </motion.div>
-                )}
-                */}
+                )} */}
+               
 
                 {isSmallScreen ? (
                     // Show content without animation on small screens
                     <div className='fullcontent'>
+                        
                         <p>Hi! 👋, I am Manuri Rasara, an undergraduate at the University of Ruhuna and a passionate software engineer.</p>
                         <br/>
                         <strong>Creative Origins ✨</strong> <br/><br/>

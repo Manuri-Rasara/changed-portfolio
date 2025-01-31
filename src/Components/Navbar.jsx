@@ -56,7 +56,7 @@ export default function Navbar() {
         </button>
       </div>
       <div className='rightpart'>
-        <a href='#'>RESUME<img src={uprightarrow} className='arrow'></img></a>
+        <a href="/resume.pdf" download="Manuri_Rasara_Resume.pdf">RESUME<img src={uprightarrow} className='arrow'></img></a>
       </div>
     </div>
   );

@@ -4,6 +4,8 @@ import angle from '../Assets/angle.png';
 import { motion } from 'framer-motion';
 import arrowdown from '../Assets/arrowdown.png';
 import power from '../Assets/power.png'
+import { BsBehance, BsGithub, BsInstagram, BsLinkedin } from 'react-icons/bs';
+import { BiRightArrow } from 'react-icons/bi';
 
 // Define fade-in variant
 const fadeInVariant = {
@@ -30,7 +32,18 @@ export default function Homecontent() {
   }, []);
 
   return (
+
+    
     <>
+
+<motion.div
+        className="subcontent"
+        variants={fadeInVariant}
+        initial="hidden"
+        animate="visible"
+      >
+        
+      </motion.div> 
       {/* Fade-in effect for main content */}
       <motion.div
         className="maincontent"
@@ -38,22 +51,27 @@ export default function Homecontent() {
         initial="hidden"
         animate="visible"
       >
-        <span>DIGITAL <img src={power} className='power'></img><br /></span>
-        <span>ARCHITECT<br /></span>
+         <p className='SmalltextHome'>Specialized in -Software Engineering | Web Development | UI/UX</p>
+        <span>PORTFOLIO<img src={power} className='power'></img><br /></span>
+        <div className='allicons'>
+        <span className='icon'><BsLinkedin fontSize={12} color='rgb(173, 169, 169)'/><a href='https://www.linkedin.com/in/manurirasarahewage'>&nbsp;&nbsp;/Linkedin</a></span><span className='icon'><BsGithub fontSize={12} color='rgb(173, 169, 169)'/><a href='https://github.com/Manuri-Rasara'>&nbsp;&nbsp;/Github</a></span><span className='icon'><BsBehance fontSize={12} color='rgb(173, 169, 169)' /><a href='https://www.behance.net/manuri'>&nbsp;&nbsp;/Behance</a></span><span className='icon'><BsInstagram fontSize={12} color='rgb(173, 169, 169)'/> <a href='https://www.instagram.com/manuri_rasara?igsh=MXRjdDNwN3I0N2prbA=='>&nbsp;&nbsp;/Instargrame</a></span>
+        </div>
+
+        <div className='startbtn' onClick={() => window.location.href = '#About'}>
+          <span><BiRightArrow className='rightarrw' />Go</span>
+        </div>
+
+       
+       
       </motion.div>
+
+   
 
       {/* Fade-in effect for subcontent */}
-      <motion.div
-        className="subcontent"
-        variants={fadeInVariant}
-        initial="hidden"
-        animate="visible"
-      >
-        <span className='SmalltextHome'>Specialized in -  <br />Software Engineering | <br />Web Development | UI/UX<br /></span>
-      </motion.div>
+  
 
-      {/* Fade-in effect for circle container */}
-      <motion.div
+    
+     <motion.div
         className="circle"
         variants={fadeInVariant}
         initial="hidden"
@@ -63,7 +81,7 @@ export default function Homecontent() {
         <div className="text">
           <p ref={textRef}>Located in the Sri Lanka</p>
         </div>
-      </motion.div>
+      </motion.div> 
 
       {/* Optionally, fade-in for the arrow down icon */}
       {/* <motion.div className="arrowdown" variants={fadeInVariant} initial="hidden" animate="visible">

@@ -3,7 +3,7 @@ import { FaArrowRightLong } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { fadeIn } from './Variants';
 import React, { useEffect, useRef, useState } from 'react';
-import user from '../Assets/user.png'
+import user from '../Assets/manuri-me.png'
 
 export default function Contact() {
     const [show, setShow] = useState(false); // Initially set to false to hide content
