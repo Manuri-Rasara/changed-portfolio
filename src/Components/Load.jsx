@@ -62,7 +62,7 @@ const ProgressBar = styled.div`
 
 const Progress = styled.div`
   height: 100%;
-  background-color:rgb(173, 169, 169);
+  background-color: #ffdd50;
   transition: width 0.4s ease-out;
 `;
 
